@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>To-Do List</h1>
+<form method="post">
+    <input type="text" name="task" placeholder="Новая задача" required>
+    <button>Добавить</button>
+</form>
+<ul>
+    {% for task in tasks %}
+    <li>
+        {{ task[1] }}
+        <a href="/delete/{{ task[0] }}">Удалить</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
