@@ -1,3 +1,14 @@
+# Виртуальное окружение
+venv/
+
+# Логи и временные файлы
+*.log
+*.tmp
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
